@@ -1,1 +1,28 @@
-hh
+Linux programming - Project plan:
+=================================
+
+STEPS:
+1. Define used HW
+	- Arduino + valo diodi + nrf24
+	- Raspberry pi + nrf24
+
+2. Define SW
+	- Arduino: collect data from sensor + push data to raspberry pi thru nrf24 interphase.
+	- Raspberry pi: gather data thru nrf24 and act as a gateway to internet databases.
+	
+3. Schedule
+	Arduino
+	- create SW for data collection and calculations
+	- push collected data thru nrf24 interphase to raspberry pi
+	Raspberry Pi
+	- Recieve data thru nrf24
+	- Collect data to local database
+	- Push database information to cloud (internet) on regular bases.
+	
+Phase 1:
+- connect raspi to sensor + collect data
+- push data to thingspeak
+
+Phase 2:
+- use arduino to gather data
+- push data thru nrf24 to raspberry
